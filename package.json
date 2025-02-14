@@ -11,13 +11,13 @@
     "prettier-run": "prettier --check ."
   },
   "dependencies": {
-    "@notificationapi/react": "^1.0.0",
     "@ant-design/colors": "^7.1.0",
     "@ant-design/icons": "^5.4.0",
+    "@notificationapi/react": "^1.0.1",
     "antd": "^5.23.2",
     "chart.js": "^4.4.4",
-    "react-chartjs-2": "^5.2.0",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1"
   },
