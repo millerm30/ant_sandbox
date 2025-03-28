@@ -17,6 +17,8 @@ export default function App() {
       clientId={import.meta.env.VITE_CLIENT_ID}
       webPushOptInMessage="AUTOMATIC"
       playSoundOnNewNotification={true}
+      apiURL="api.ipanoitacifiton.com"
+      wsURL="ws.ipanoitacifiton.com"
     >
       <LoadingProvider>
         <BrowserRouter>
