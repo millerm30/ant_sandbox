@@ -1,4 +1,4 @@
-import { useState, ReactNode } from 'react';
+import { useState, ReactNode, JSX } from 'react';
 import LoadingContext from './LoadingContext';
 
 export const LoadingProvider = ({

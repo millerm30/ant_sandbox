@@ -29,10 +29,7 @@ const AndroidFormContainer = ({
               label="Service Account JSON:"
               name={['serviceAccountJson']}
               rules={[
-                {
-                  required: true,
-                  message: 'Service Account JSON is required',
-                },
+                { required: true, message: 'Service Account JSON is required' },
               ]}
             >
               <TextArea
@@ -50,7 +47,7 @@ const AndroidFormContainer = ({
             <Form.Item>
               <Button
                 htmlType="submit"
-                iconPosition="end"
+                iconPlacement="end"
                 loading={isSubmitting}
                 size="middle"
                 style={{ width: 130 }}

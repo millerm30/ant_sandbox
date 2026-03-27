@@ -27,12 +27,7 @@ const AppleFormContainer = ({
             <Form.Item
               label="Key ID:"
               name={['keyId']}
-              rules={[
-                {
-                  required: true,
-                  message: 'Key ID is required',
-                },
-              ]}
+              rules={[{ required: true, message: 'Key ID is required' }]}
             >
               <Input allowClear placeholder="Enter your KeyId" />
             </Form.Item>
@@ -43,12 +38,7 @@ const AppleFormContainer = ({
             <Form.Item
               label="Key:"
               name={['key']}
-              rules={[
-                {
-                  required: true,
-                  message: 'Key is required',
-                },
-              ]}
+              rules={[{ required: true, message: 'Key is required' }]}
             >
               <TextArea
                 allowClear
@@ -84,7 +74,7 @@ const AppleFormContainer = ({
         <Row justify={'end'}>
           <Button
             htmlType="submit"
-            iconPosition="end"
+            iconPlacement="end"
             loading={isSubmitting}
             size="middle"
             style={{ width: 130 }}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, JSX } from 'react';
 import {
   HomeOutlined,
   PushpinOutlined,
@@ -38,12 +38,7 @@ function getItem(
   icon?: React.ReactNode,
   children?: MenuItem[],
 ): MenuItem {
-  return {
-    key,
-    icon,
-    children,
-    label,
-  } as MenuItem;
+  return { key, icon, children, label } as MenuItem;
 }
 
 const items: MenuItem[] = [
@@ -107,12 +102,7 @@ const PageLayout = ({ children }: Props): JSX.Element => {
       </Sider>
       <Layout style={{ backgroundColor: '#001529' }}>
         <Header style={{ padding: 0, backgroundColor: '#202532' }}>
-          <Row
-            justify="space-between"
-            style={{
-              padding: '0px 24px',
-            }}
-          >
+          <Row justify="space-between" style={{ padding: '0px 24px' }}>
             <Col>
               <Title style={{ color: '#FFFFFF' }} level={3}>
                 {pageTitles[location.pathname]}

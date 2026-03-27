@@ -17,8 +17,8 @@ export default function App() {
       clientId={import.meta.env.VITE_CLIENT_ID}
       webPushOptInMessage="AUTOMATIC"
       playSoundOnNewNotification={true}
-      apiURL="api.ipanoitacifiton.com"
-      wsURL="ws.ipanoitacifiton.com"
+      apiURL="api.pingram.click"
+      wsURL="ws.pingram.click"
     >
       <LoadingProvider>
         <BrowserRouter>

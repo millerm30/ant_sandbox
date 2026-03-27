@@ -18,10 +18,16 @@ const HomeContainer = () => {
           Ant Design local sandbox for development and testing features and
           components.
         </Paragraph>
-        <Space direction="vertical" style={{ width: '100%', marginBottom: 20 }}>
+        <Space
+          orientation="vertical"
+          style={{ width: '100%', marginBottom: 20 }}
+        >
           <SlackConnect />
         </Space>
-        <Space direction="vertical" style={{ width: '100%', marginBottom: 20 }}>
+        <Space
+          orientation="vertical"
+          style={{ width: '100%', marginBottom: 20 }}
+        >
           <NotificationPreferencesInline />
         </Space>
         <NotificationFeed />

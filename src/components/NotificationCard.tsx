@@ -127,11 +127,11 @@ const NotificationCard: React.FC<NotificationCardProps> = (props) => {
             </div>
           }
           placement="right"
-          overlayStyle={{
-            paddingLeft: '24px',
-          }}
-          overlayInnerStyle={{ padding: '16px' }}
           mouseEnterDelay={0.1}
+          styles={{
+            container: { padding: '16px' },
+            root: { paddingLeft: '24px' },
+          }}
         >
           <div>
             <Text style={{ padding: 24 }}>Duplicate</Text>
@@ -155,11 +155,11 @@ const NotificationCard: React.FC<NotificationCardProps> = (props) => {
             </div>
           }
           placement="right"
-          overlayStyle={{
-            paddingLeft: '24px',
-          }}
-          overlayInnerStyle={{ padding: '16px' }}
           mouseEnterDelay={0.1}
+          styles={{
+            container: { padding: '16px' },
+            root: { paddingLeft: '24px' },
+          }}
         >
           <div>
             <Text style={{ padding: 24 }} type="warning">
@@ -184,10 +184,10 @@ const NotificationCard: React.FC<NotificationCardProps> = (props) => {
             </div>
           }
           placement="right"
-          overlayStyle={{
-            paddingLeft: '24px',
+          styles={{
+            container: { padding: '16px' },
+            root: { paddingLeft: '24px' },
           }}
-          overlayInnerStyle={{ padding: '16px' }}
           mouseEnterDelay={0.1}
         >
           <div>
@@ -261,15 +261,11 @@ const NotificationCard: React.FC<NotificationCardProps> = (props) => {
         <Col span={24}>
           <Line
             options={{
-              layout: {
-                padding: 10,
-              },
+              layout: { padding: 10 },
               responsive: true,
               maintainAspectRatio: false,
               plugins: {
-                legend: {
-                  display: false,
-                },
+                legend: { display: false },
                 tooltip: {
                   padding: 20,
                   titleMarginBottom: 10,
@@ -278,19 +274,8 @@ const NotificationCard: React.FC<NotificationCardProps> = (props) => {
                   backgroundColor: 'rgba(0,0,0,0.7)',
                 },
               },
-              interaction: {
-                mode: 'nearest',
-                axis: 'x',
-                intersect: false,
-              },
-              scales: {
-                x: {
-                  display: false,
-                },
-                yAxes: {
-                  display: false,
-                },
-              },
+              interaction: { mode: 'nearest', axis: 'x', intersect: false },
+              scales: { x: { display: false }, yAxes: { display: false } },
             }}
             data={data}
           />
